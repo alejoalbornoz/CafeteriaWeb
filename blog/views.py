@@ -8,4 +8,4 @@ def blog(request):
 def category(request, category_id):
     category = get_object_or_404(Category, id=category_id) #Encontrara la categoria que tenga dicho identificador o 404
 
-    return render (request, "blog/category.html",{"category":category})
+    return render (request, "blog/category.html",{"category":category}) 
